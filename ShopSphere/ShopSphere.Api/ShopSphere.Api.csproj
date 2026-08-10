@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Users\Satyaprakash\Downloads\ShopSphere_Full_Authentication\backend\ShopSphere.Api\Controllers\AdminUsersController.cs" Link="Controllers\AdminUsersController.cs" />
+    <Compile Include="..\..\..\..\Users\Satyaprakash\Downloads\ShopSphere_Full_Authentication\backend\ShopSphere.Api\Controllers\AuthController.cs" Link="Controllers\AuthController.cs" />
+    <Compile Include="..\..\..\..\Users\Satyaprakash\Downloads\ShopSphere_Full_Authentication\backend\ShopSphere.Api\Database\IdentitySeeder.cs" Link="Database\IdentitySeeder.cs" />
+    <Compile Include="..\..\..\..\Users\Satyaprakash\Downloads\ShopSphere_Full_Authentication\backend\ShopSphere.Api\Models\ApplicationUser.cs" Link="Models\ApplicationUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Product\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+wwwroot\Images\Product\sony-headphones.png
+wwwroot\Images\Product\sandisk.png
+wwwroot\Images\Product\logitech-mouse.png
+wwwroot\Images\Product\lenovo.png
+wwwroot\Images\Product\iphone15.png
+wwwroot\Images\Product\iphone16promax.png
+wwwroot\Images\Product\hp-printer.png
+wwwroot\Images\Product\dell-leptop.png
+wwwroot\Images\Product\boat-headphones.png
+wwwroot\Images\Product\sms23ultra.png
+wwwroot\Images\Product\acerleptop.png
+wwwroot\Images\Product\komal.png
+wwwroot\Images\Product\anjali.png
