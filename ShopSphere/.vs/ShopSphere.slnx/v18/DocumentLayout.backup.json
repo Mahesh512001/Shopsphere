@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Mahesh\\ShopSphere\\ShopSphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\dtos\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\dtos\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\database\\shopspheredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\migrations\\20260730062150_addidentityrolesandsellerownership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\migrations\\20260730062150_addidentityrolesandsellerownership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|solutionrelative:shopsphere.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F711EDCF-741F-9463-56F5-5526E73CA577}|ShopSphere.Api\\ShopSphere.Api.csproj|c:\\mahesh\\shopsphere\\shopsphere\\shopsphere.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,34 +53,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
-              "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
-              "RelativeToolTip": "ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T18:19:16.459Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\appsettings.json",
               "RelativeDocumentMoniker": "ShopSphere.Api\\appsettings.json",
               "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\appsettings.json",
               "RelativeToolTip": "ShopSphere.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-06-22T09:28:28.232Z",
               "EditorCaption": ""
@@ -99,32 +86,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Program.cs",
               "RelativeDocumentMoniker": "ShopSphere.Api\\Program.cs",
               "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Program.cs",
               "RelativeToolTip": "ShopSphere.Api\\Program.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAQwOQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAiwOQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T06:46:37.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-18T06:46:37.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ShopSphereDbContext.cs",
               "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Database\\ShopSphereDbContext.cs",
               "RelativeDocumentMoniker": "ShopSphere.Api\\Database\\ShopSphereDbContext.cs",
               "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Database\\ShopSphereDbContext.cs",
               "RelativeToolTip": "ShopSphere.Api\\Database\\ShopSphereDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T17:07:36.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ShopSphere.Api\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ShopSphere.Api\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAiwJIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T15:49:28.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
+              "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
+              "RelativeToolTip": "ShopSphere.Api\\DTOs\\Auth\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-06T18:19:16.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "20260730062150_AddIdentityRolesAndSellerOwnership.cs",
               "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Migrations\\20260730062150_AddIdentityRolesAndSellerOwnership.cs",
               "RelativeDocumentMoniker": "ShopSphere.Api\\Migrations\\20260730062150_AddIdentityRolesAndSellerOwnership.cs",
@@ -136,19 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "ShopSphere.Api\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "ShopSphere.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAowEgAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T15:49:28.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Mahesh\\ShopSphere\\ShopSphere\\ShopSphere.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ShopSphere.Api\\appsettings.Development.json",

@@ -2,7 +2,7 @@ import { Navigate, useLocation } from "react-router";
 import { useAuth } from "../context/AuthContext";
 
 function RoleRoute({ allowedRoles, children }) {
-  const { user, loading } = useAuth();
+  const { user, loading, hasRole } = useAuth();
   const location = useLocation();
 
   if (loading) {
@@ -25,9 +25,7 @@ function RoleRoute({ allowedRoles, children }) {
     );
   }
 
-  const isAllowed = allowedRoles.some((role) =>
-    user.roles?.includes(role)
-  );
+  const isAllowed = allowedRoles.some(hasRole);
 
   if (!isAllowed) {
     return <Navigate to="/access-denied" replace />;

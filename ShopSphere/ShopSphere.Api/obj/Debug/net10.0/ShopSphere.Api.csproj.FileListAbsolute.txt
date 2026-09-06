@@ -326,3 +326,4 @@ C:\Mahesh\ShopSphere\ShopSphere\ShopSphere.Api\obj\Debug\net10.0\ShopSphere.Api.
 C:\Mahesh\ShopSphere\ShopSphere\ShopSphere.Api\obj\Debug\net10.0\ref\ShopSphere.Api.dll
 C:\Mahesh\ShopSphere\ShopSphere\ShopSphere.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Mahesh\ShopSphere\ShopSphere\ShopSphere.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Mahesh\ShopSphere\ShopSphere\ShopSphere.Api\obj\Debug\net10.0\ShopSphere.Api.sourcelink.json

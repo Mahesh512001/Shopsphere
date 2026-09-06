@@ -12,10 +12,25 @@ const USER_KEY = "shopsphere-user";
 
 const AuthContext = createContext(null);
 
+function normalizeUser(user) {
+  if (!user) {
+    return null;
+  }
+
+  return {
+    ...user,
+    roles: Array.isArray(user.roles)
+      ? user.roles
+      : Array.isArray(user.Roles)
+        ? user.Roles
+        : [],
+  };
+}
+
 function readStoredUser() {
   try {
     const storedUser = localStorage.getItem(USER_KEY);
-    return storedUser ? JSON.parse(storedUser) : null;
+    return storedUser ? normalizeUser(JSON.parse(storedUser)) : null;
   } catch {
     return null;
   }
@@ -38,7 +53,10 @@ export function AuthProvider({ children }) {
       JSON.stringify(authResponse.user)
     );
 
-    setUser(authResponse.user);
+    const normalizedUser = normalizeUser(authResponse.user);
+    setUser(normalizedUser);
+
+    return normalizedUser;
   };
 
   useEffect(() => {
@@ -53,12 +71,14 @@ export function AuthProvider({ children }) {
       try {
         const response = await api.get("/auth/me");
 
+        const normalizedUser = normalizeUser(response.data);
+
         localStorage.setItem(
           USER_KEY,
-          JSON.stringify(response.data)
+          JSON.stringify(normalizedUser)
         );
 
-        setUser(response.data);
+        setUser(normalizedUser);
       } catch {
         clearAuth();
       } finally {
@@ -91,9 +111,9 @@ export function AuthProvider({ children }) {
       credentials
     );
 
-    saveAuth(response.data);
+    const user = saveAuth(response.data);
 
-    return response.data.user;
+    return user;
   };
 
   const register = async (formData) => {
@@ -102,9 +122,7 @@ export function AuthProvider({ children }) {
       formData
     );
 
-    saveAuth(response.data);
-
-    return response.data.user;
+    return saveAuth(response.data);
   };
 
   const logout = () => {
@@ -112,7 +130,12 @@ export function AuthProvider({ children }) {
   };
 
   const hasRole = (role) =>
-    Boolean(user?.roles?.includes(role));
+    Boolean(
+      user?.roles?.some(
+        (userRole) =>
+          userRole.toLowerCase() === role.toLowerCase()
+      )
+    );
 
   const value = useMemo(
     () => ({

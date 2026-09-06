@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopSphere.Api.Database;
 using ShopSphere.Api.Models;
@@ -16,16 +18,36 @@ namespace ShopSphere.Api.Controllers
             _context = context;
         }
 
-        // GET: api/Products
+        // Public product list.
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return await _context.Products
+            return Ok(await _context.Products
+                .AsNoTracking()
                 .OrderByDescending(product => product.Id)
-                .ToListAsync();
+                .ToListAsync());
         }
 
-        // GET: api/Products/5
+        // Admin sees all products. Seller sees only products created by them.
+        [Authorize(Roles = "Seller,Admin")]
+        [HttpGet("manage")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetManageProducts()
+        {
+            IQueryable<Product> query = _context.Products.AsNoTracking();
+
+            if (!User.IsInRole("Admin"))
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                query = query.Where(product => product.SellerUserId == userId);
+            }
+
+            return Ok(await query
+                .OrderByDescending(product => product.Id)
+                .ToListAsync());
+        }
+
+        [AllowAnonymous]
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
@@ -39,11 +61,19 @@ namespace ShopSphere.Api.Controllers
             return Ok(product);
         }
 
-        // POST: api/Products
+        [Authorize(Roles = "Seller,Admin")]
         [HttpPost]
         public async Task<ActionResult<Product>> AddProduct(Product product)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (string.IsNullOrWhiteSpace(userId))
+            {
+                return Unauthorized();
+            }
+
             product.Id = 0;
+            product.SellerUserId = userId;
 
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
@@ -55,7 +85,7 @@ namespace ShopSphere.Api.Controllers
             );
         }
 
-        // PUT: api/Products/5
+        [Authorize(Roles = "Seller,Admin")]
         [HttpPut("{id:int}")]
         public async Task<ActionResult<Product>> UpdateProduct(
     int id,
@@ -68,17 +98,23 @@ namespace ShopSphere.Api.Controllers
                 return NotFound("Product not found.");
             }
 
+            if (!CanManage(existingProduct))
+            {
+                return Forbid();
+            }
+
             existingProduct.Name = updatedProduct.Name;
             existingProduct.Price = updatedProduct.Price;
             existingProduct.Stock = updatedProduct.Stock;
             existingProduct.ImageUrl = updatedProduct.ImageUrl;
+            existingProduct.Description = updatedProduct.Description;
 
             await _context.SaveChangesAsync();
 
             return Ok(existingProduct);
         }
 
-        // DELETE: api/Products/5
+        [Authorize(Roles = "Seller,Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -89,10 +125,27 @@ namespace ShopSphere.Api.Controllers
                 return NotFound("Product not found.");
             }
 
+            if (!CanManage(product))
+            {
+                return Forbid();
+            }
+
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private bool CanManage(Product product)
+        {
+            if (User.IsInRole("Admin"))
+            {
+                return true;
+            }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return !string.IsNullOrWhiteSpace(userId)
+                && product.SellerUserId == userId;
         }
     }
 }

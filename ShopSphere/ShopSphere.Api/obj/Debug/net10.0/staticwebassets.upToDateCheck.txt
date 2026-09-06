@@ -11,3 +11,5 @@ wwwroot\Images\Product\sms23ultra.png
 wwwroot\Images\Product\acerleptop.png
 wwwroot\Images\Product\komal.png
 wwwroot\Images\Product\anjali.png
+wwwroot\Images\Product\neha.jpeg
+wwwroot\Images\Product\chubby.png

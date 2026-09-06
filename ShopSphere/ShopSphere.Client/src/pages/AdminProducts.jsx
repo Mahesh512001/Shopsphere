@@ -216,8 +216,10 @@ function AdminProducts() {
                       || name === "stock"
                     }
                     min={
-                      name === "price" || name === "stock"
-                        ? "0"
+                      name === "price"
+                        ? "1"
+                        : name === "stock"
+                          ? "0"
                         : undefined
                     }
                     step={
